@@ -1,0 +1,25 @@
+{
+  "name": "lau-cua-79-quantum-v9",
+  "version": "9.1.0",
+  "description": "Lẩu Cua 79 Dự Đoán Tài Xỉu | Quantum Ensemble v9.1 + Bayesian + Fingerprint + Weibull + JSD",
+  "main": "lc.js",
+  "scripts": {
+    "start": "node lc.js",
+    "dev": "node --watch lc.js",
+    "pm2": "pm2 start lc.js --name lc79 --time",
+    "pm2-restart": "pm2 restart lc79",
+    "pm2-log": "pm2 logs lc79 --lines 200",
+    "stop": "pm2 stop lc79 && pm2 delete lc79"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "author": "@tiendataox",
+  "license": "MIT",
+  "keywords": ["lau-cua","tai-xiu","prediction","quantum","bayesian","weibull"]
+}
